@@ -8,9 +8,12 @@ $mdpHash= hash('adler32', $mdp);
 
 require "../Actions/config.php";
 
-$db = new PDO("mysql:host=".Config::SERVEUR.";dbname=".Config::BASE, Config::UTILISATEUR, Config::MOTDEPASSE);
-
-$requete=$db->prepare("INSERT INTO client ('id', 'nom', 'prenom', 'mdpHash', 'email')"."VALUES (NULL, :nom, :prenom, :mdpHash, :email)");
+try {
+    $db = new PDO("mysql:host=".Config::SERVEUR.";dbname=".Config::BASE, Config::UTILISATEUR, Config::MOTDEPASSE);
+} catch (Exception $e) {
+    die('Erreur : ' . $e->getMessage());
+}
+$requete=$db->prepare("INSERT INTO client (id, nom, prenom, mdp, email)"."VALUES (NULL, :nom, :prenom, :mdpHash, :email)");
 $requete->bindParam(":nom", $nom);
 $requete->bindParam(":prenom", $prenom);
 $requete->bindParam(":mdpHash", $mdpHash);
@@ -23,7 +26,7 @@ echo "$email\n";
 
 $requete->execute();
 
-header('Location : ../VuesconnectionClient.php');
+header('Location: ../Vues/connectionClient.php');
 ?>
 
 

@@ -2,12 +2,6 @@
 include "../Vues/header.php";
 mon_header("Connection");
 session_start();
-$tokenEnvoye=filter_input(INPUT_POST, "token");
-if ($tokenEnvoye!=$_SESSION["token"]){
-    echo "Vilain pirate";
-    die();
-}
-
 ?>
 
 <div class="containerConnection">

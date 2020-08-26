@@ -10,20 +10,20 @@ $_SESSION["token"]=$token;
 ?>
 <div class="w3-content">
     <div class="w3-display-container mySlides">
-        <img src="../Images/diapo03.jpg" style="width:100%">
+        <img src="../Images/diapo03.jpg" style="width:100%" alt="diapo3">
         <div class="w3-display-middle w3-large w3-container w3-padding-16">
             <h1><b>Promenade de chien</b></h1>
         </div>
     </div>
     <div class="w3-display-container mySlides">
-        <img src="../Images/diapo02.jpg" style="width:100%">
+        <img src="../Images/diapo02.jpg" style="width:100%" alt="diapo2">
         <div class="w3-display-middle w3-large w3-container w3-padding-16">
             <h1><b>Promenade de chien</b></h1>
 
         </div>
     </div>
     <div class="w3-display-container mySlides">
-        <img src="../Images/diapo01.jpg" style="width:100%">
+        <img src="../Images/diapo01.jpg" style="width:100%" alt="diapo1">
         <div class="w3-display-middle w3-large w3-container w3-padding-16">
             <h1><b>Promenade de chien</b></h1>
         </div>
