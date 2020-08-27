@@ -97,7 +97,7 @@ h1 {
 }
 
 body{
-    background: gray;
+    background: darkgray;
 }
 
 .containerFonctionnement {
@@ -111,10 +111,10 @@ table
 
 .containerResa {
     text-align: center;
-    border-radius: 109px 109px 109px 109px;
-    -moz-border-radius: 109px 109px 109px 109px;
-    -webkit-border-radius: 109px 109px 109px 109px;
-    border: 1px solid black;
+    border-radius: 11px 11px 11px 11px;
+    -moz-border-radius: 11px 11px 11px 11px;
+    -webkit-border-radius: 11px 11px 11px 11px;
+    border: 0 solid black;
     background-color: gainsboro;
     padding-bottom: 15vh;
     margin-right: 30vh;
