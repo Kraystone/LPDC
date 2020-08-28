@@ -1,19 +1,4 @@
-.mySlides {
-    display:none;
 
-}
-.w3-left, .w3-right, .w3-badge {
-    cursor:pointer;
-}
-.w3-badge {
-    height: 13px;
-    width: 13px;
-    padding: 0;
-}
-
-.w3-content {
-    max-width: 10000px;
-}
 
 .container_petSitting {
     padding-top: 1vh;
@@ -66,6 +51,10 @@ input {
     width: 50vh;
     text-align: center;
     color: white;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    padding-right: 2vh;
+    padding-left: 2vh;
 }
 
 h2{
@@ -74,7 +63,7 @@ h2{
     font-size: 3em;
 }
 h1 {
-    font: normal normal normal 30px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
     text-align: center;
     font-size: 3em;
 }
@@ -97,7 +86,7 @@ h1 {
 }
 
 body{
-    background: darkgray;
+    background: #615D5C;
 }
 
 .containerFonctionnement {

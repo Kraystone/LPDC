@@ -8,27 +8,81 @@ $token=rand(0,2000000000);
 $_SESSION["token"]=$token;
 
 ?>
-<div class="w3-content">
-    <div class="w3-display-container mySlides">
-        <img src="../Images/diapo03.jpg" style="width:100%" alt="diapo3">
-        <div class="w3-display-middle w3-large w3-container w3-padding-16">
-            <h1><b>Promenade de chien</b></h1>
-        </div>
-    </div>
-    <div class="w3-display-container mySlides">
-        <img src="../Images/diapo02.jpg" style="width:100%" alt="diapo2">
-        <div class="w3-display-middle w3-large w3-container w3-padding-16">
-            <h1><b>Promenade de chien</b></h1>
+<fieldset class="slideshow">
 
+    <!-- Slide 1 -->
+    <input type="radio" id="slideCheckbox1" name="slide" checked autofocus>
+    <div class="slide">
+        <div class="slide__html">
+            <!-- You can include HTML instead of a background image using .slide__image -->
+        </div>
+        <div class="slide__content">
+            <h1>Slideshow Concept V2 (No JS)</h1>
+            <p>A pure CSS and HTML slideshow concept.</p>
+            <p>To add or remove slides:</p>
+            <ul>
+                <li>Add a new slide template and label in the HTML</li>
+                <li>Update the <code>$slide-count</code> SCSS variable</li>
+                <li>Tab colours: Update the <code>$c-slides</code> SCSS variable</li>
+                <li>Slide popout images: Update the <code>$b-slides</code> SCSS variable</li>
+            </ul>
+            <p>Use the tabs below to change slide</p>
+            <p><strong style="color: #0F0">NEW:</strong> Arrow keys work too after your first selection.</p>
+            <p>Et voila.</p>
         </div>
     </div>
-    <div class="w3-display-container mySlides">
-        <img src="../Images/diapo01.jpg" style="width:100%" alt="diapo1">
-        <div class="w3-display-middle w3-large w3-container w3-padding-16">
-            <h1><b>Promenade de chien</b></h1>
+
+    <!-- Slide 2 -->
+    <input type="radio" id="slideCheckbox2" name="slide">
+    <div class="slide">
+        <div class="slide__content">
+            <h1>More</h1>
+            <p>More here</p>
         </div>
     </div>
-</div>
+
+    <!-- Slide 3 -->
+    <input type="radio" id="slideCheckbox3" name="slide">
+    <div class="slide">
+        <div class="slide__content">
+            <h1>Yet More</h1>
+            <p>Yet more here</p>
+        </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <input type="radio" id="slideCheckbox4" name="slide">
+    <div class="slide">
+        <div class="slide__content">
+            <h1>Zzz</h1>
+            <p>Yada yada</p>
+        </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <input type="radio" id="slideCheckbox5" name="slide">
+    <div class="slide">
+        <div class="slide__content">
+            <h1>The end</h1>
+            <p>It's over</p>
+        </div>
+    </div>
+
+    <!-- Add more slides here! -->
+
+    <nav>
+
+        <!-- Add slide labels here! -->
+
+        <label class="slide-button" for="slideCheckbox1">Intro</label>
+        <label class="slide-button" for="slideCheckbox2">More</label>
+        <label class="slide-button" for="slideCheckbox3">Yet More</label>
+        <label class="slide-button" for="slideCheckbox4">Zzz</label>
+        <label class="slide-button" for="slideCheckbox5">The End</label>
+    </nav>
+
+</fieldset>
+
 <br>
 <h1>Comment ça marche ?</h1>
 <br>
